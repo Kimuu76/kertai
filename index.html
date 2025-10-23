@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kertai Milk - Premium Dairy Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Kertai Milk</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#local-sales">Local Sales</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Pure. Fresh. Natural.</h1>
+            <p>Premium quality milk and dairy products from local farms to your table</p>
+            <a href="#products" class="cta-button">Our Products</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Kertai Milk</h2>
+                <p class="section-subtitle">Bridging Farmers and Consumers with Quality Dairy</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-highlight">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Our Story</h3>
+                        <p>Founded with a vision to support local agriculture, Kertai Milk has been a trusted name in the dairy industry since Jan 2025. We take pride in connecting local dairy farmers with consumers who value freshness and quality.</p>
+                    </div>
+                    
+                    <div class="mission-vision">
+                        <div class="mission-box">
+                            <i class="fas fa-bullseye"></i>
+                            <h4>Our Mission</h4>
+                            <p>To empower local farmers and provide our community with the freshest, highest quality milk while maintaining sustainable farming practices.</p>
+                        </div>
+                        <div class="vision-box">
+                            <i class="fas fa-eye"></i>
+                            <h4>Our Vision</h4>
+                            <p>To be the leading milk assembly point known for quality, reliability, and community impact in our region.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="values">
+                        <h4>Core Values</h4>
+                        <div class="value-items">
+                            <div class="value-item">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span>Community Support</span>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-star"></i>
+                                <span>Quality First</span>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Integrity</span>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Sustainability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Fresh Milk">
+                        <div class="experience-badge">
+                            <span class="years">5+</span>
+                            <span>Years of Excellence</span>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">300+</span>
+                            <span class="stat-label">Local Farmers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Fresh Supply</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Farmers Section -->
+    <section id="for-farmers" class="products" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2>For Dairy Farmers</h2>
+            <div class="farmer-content">
+                <div class="farmer-info">
+                    <h3>Sell Your Milk to Us</h3>
+                    <p>Kertai Milk is always looking to partner with local dairy farmers. We offer:</p>
+                    <ul>
+                        <li><strong>Competitive Prices:</strong> We offer fair market rates for quality milk</li>
+                        <li><strong>Daily Collection:</strong> Regular and reliable milk collection</li>
+                        <li><strong>Quality Matters:</strong> We pay premium prices for high-quality milk</li>
+                        <li><strong>Growth Support:</strong> Technical assistance to improve milk quality and yield</li>
+                    </ul>
+                    
+                    <div class="pricing-box">
+                        <h4>Current Buying Price</h4>
+                        <div class="price">KSh 35 / liter</div>
+                        <p class="small">* Prices may vary based on quality and quantity</p>
+                    </div>
+                    
+                    <a href="#contact" class="cta-button">Become a Supplier</a>
+                </div>
+                <div class="farmer-image">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c6988f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dairy Farmer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Milk Sales Section -->
+    <section id="local-sales" class="products">
+        <div class="container">
+            <h2>Fresh Local Milk</h2>
+            <p class="section-description">100% pure, fresh cow milk from local farmers. Available for purchase at our location.</p>
+            <div class="product-grid" id="localSalesGrid">
+                <!-- Local milk product will be dynamically added here -->
+            </div>
+            <div class="pricing-info">
+                <h3>Pricing</h3>
+                <ul>
+                    <li>Price per liter: <strong>KSh 50</strong></li>
+                    <li>Minimum purchase: 1 liter</li>
+                    <li>Bring your own container or purchase one from us</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>71 Longisa Kembu Longisa Road</p>
+                            <p>Longisa, Kenya</p>
+                            <a href="https://maps.google.com" target="_blank" class="map-link">View on Map <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+254 720 369014</p>
+                            <p>Sun - Sat: 8:00 AM - 6:00 PM</p>
+                            <a href="tel:+254720369014" class="phone-link">Call Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>info@kertaimilk.co.ke</p>
+                            <p>sales@kertaimilk.co.ke</p>
+                            <a href="mailto:info@kertaimilk.co.ke" class="email-link">Send Email</a>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <p>Have questions or special requests? We're here to help!</p>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address (Optional)</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected></option>
+                                <option value="general">General Inquiry</option>
+                                <option value="farmer">Farmer Partnership</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="cta-button">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808477395489!2d36.82115991475399!3d-1.2923595359784992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d7b238e6c9%3A0x9d5e6b9e6a8e7e1f!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1634823456789!5m2!1sen!2ske" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kertai Milk</h3>
+                    <p>Delivering fresh, quality dairy products to your doorstep.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kertai Milk. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
