@@ -48,10 +48,19 @@ function initEventListeners() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
+                // Close mobile menu if open
+                if (hamburger && hamburger.classList.contains('active')) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                }
+                
+                // Calculate the header offset
                 const headerOffset = 80;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
+                // Smooth scroll to the target
                 window.scrollTo({
                     top: offsetPosition,
                     behavior: 'smooth'
@@ -105,8 +114,46 @@ function initFormValidation() {
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
         try {
-            // Simulate form submission (replace with actual fetch/AJAX call)
-            await new Promise(resolve => setTimeout(resolve, 1500));
+            const formData = new FormData(form);
+            const formValues = Object.fromEntries(formData.entries());
+            const { name, email, phone, message, 'contact-method': contactMethod, subject } = formValues;
+            
+            // Prepare the message content
+            const messageContent = `New message from Kertai Milk Website:%0A%0A` +
+                                `Name: ${name}%0A` +
+                                `Email: ${email}%0A` +
+                                `Phone: ${phone}%0A` +
+                                `Subject: ${subject}%0A` +
+                                `Preferred Contact Method: ${contactMethod}%0A%0A` +
+                                `Message:%0A${message}`;
+            
+            // Send via WhatsApp
+            const phoneNumber = '254112676725'; // Replace with actual business number
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${messageContent}`;
+            
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
+            
+            // Also send via email using Formspree or similar service
+            const emailResponse = await fetch('https://formspree.io/f/your-form-id', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    phone,
+                    subject,
+                    message,
+                    contactMethod,
+                    _subject: `New Contact from Kertai Milk Website: ${subject}`
+                })
+            });
+            
+            if (!emailResponse.ok) {
+                throw new Error('Failed to send email');
+            }
             
             // Show success message
             showFormMessage('success', 'Your message has been sent successfully! We\'ll get back to you soon.');

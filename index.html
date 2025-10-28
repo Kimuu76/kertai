@@ -15,10 +15,12 @@
                 <h1>Kertai Milk</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#local-sales">Local Sales</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#for-farmers" class="nav-link">For Farmers</a></li>
+                <li><a href="#local-sales" class="nav-link">Local Sales</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -28,10 +30,110 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Pure. Fresh. Natural.</h1>
-            <p>Premium quality milk and dairy products from local farms to your table</p>
-            <a href="#products" class="cta-button">Our Products</a>
+            <span class="hero-subtitle">Welcome to Kertai Milk</span>
+            <h1>Pure. Fresh. <span class="highlight">Natural</span>.</h1>
+            <p>Experience farm-fresh dairy products delivered with care from our local farmers to your family's table</p>
+            <div class="hero-buttons">
+                <a href="#products" class="cta-button primary">Our Products</a>
+                <a href="#about" class="cta-button secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="feature">
+                <i class="fas fa-truck"></i>
+                <span>Daily Delivery</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-leaf"></i>
+                <span>100% Natural</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-heart"></i>
+                <span>Farm Fresh</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Featured Product</h2>
+                <p class="section-subtitle">Premium Quality Fresh Milk</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1563636619-e9143da7973b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                        <span class="product-tag">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Cow Milk</h3>
+                        <p>100% pure, unprocessed milk from grass-fed cows. Delivered fresh daily from local farms to your doorstep.</p>
+                        <div class="product-footer">
+                            <span class="price">KSh 50/liter</span>
+                            <button class="add-to-cart">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+   <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2>What Our Partners Say</h2>
+                <p class="section-subtitle">Trusted by dairy farmers and valued customers</p>
+            </div>
+            <div class="testimonials-grid">
+                
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="testimonial-content">
+                        <p>As a local dairy farmer, partnering with Kertai Milk has been a game-changer for my business. Their fair pricing, prompt weekly payments through M-Pesa, and commitment to quality have helped me grow my farm sustainably. The D1-D7 payment schedule is reliable and makes financial planning easier.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Dairy Farmer">
+                        </div>
+                        <div class="author-info">
+                            <h4>James M.</h4>
+                            <span>Dairy Farmer Partner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-cta">
+                <p>Become part of our growing network of dairy partners</p>
+                <a href="#contact" class="cta-button">Join Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest updates, offers, and dairy tips</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -125,7 +227,43 @@
                         <li><strong>Daily Collection:</strong> Regular and reliable milk collection</li>
                         <li><strong>Quality Matters:</strong> We pay premium prices for high-quality milk</li>
                         <li><strong>Growth Support:</strong> Technical assistance to improve milk quality and yield</li>
+                        <li><strong>Weekly Payments:</strong> Timely payments every Sunday for the week's deliveries</li>
                     </ul>
+                    
+                    <div class="payment-schedule">
+                        <h4>Weekly Schedule</h4>
+                        <div class="schedule-grid">
+                            <div class="day-card payment-day">
+                                <div class="day-header">D1</div>
+                                <div class="day-name">SUN</div>
+                            </div>
+                            <div class="day-card">
+                                <div class="day-header">D2</div>
+                                <div class="day-name">MON</div>
+                            </div>
+                            <div class="day-card">
+                                <div class="day-header">D3</div>
+                                <div class="day-name">TUE</div>
+                            </div>
+                            <div class="day-card">
+                                <div class="day-header">D4</div>
+                                <div class="day-name">WED</div>
+                            </div>
+                            <div class="day-card">
+                                <div class="day-header">D5</div>
+                                <div class="day-name">THU</div>
+                            </div>
+                            <div class="day-card">
+                                <div class="day-header">D6</div>
+                                <div class="day-name">FRI</div>
+                            </div>
+                            <div class="day-card">
+                                <div class="day-header">D7</div>
+                                <div class="day-name">SAT</div>
+                            </div>
+                        </div>
+                        <p class="schedule-note">Payments on D1 for previous week's deliveries</p>
+                    </div>
                     
                     <div class="pricing-box">
                         <h4>Current Buying Price</h4>
@@ -133,10 +271,35 @@
                         <p class="small">* Prices may vary based on quality and quantity</p>
                     </div>
                     
-                    <a href="#contact" class="cta-button">Become a Supplier</a>
+                    <a href="#contact" class="cta-button primary">Become a Supplier</a>
                 </div>
                 <div class="farmer-image">
                     <img src="https://images.unsplash.com/photo-1583121274602-3e2820c6988f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dairy Farmer">
+                    <div class="payment-methods">
+                        <h4>Secure M-Pesa Payments</h4>
+                        <div class="mpesa-method">
+                            <div class="mpesa-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="mpesa-details">
+                                <h5>M-Pesa Payments</h5>
+                                <p>Fast, secure, and convenient mobile money payments directly to your phone</p>
+                                
+                                <div class="payment-instructions">
+                                    <h6><i class="fas fa-info-circle"></i> How to receive payments:</h6>
+                                    <ol>
+                                        <li>Ensure your phone number is registered with M-Pesa</li>
+                                        <li>Provide your M-Pesa registered number to our team</li>
+                                        <li>Receive instant payment notifications every Sunday</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="payment-note">
+                                    <i class="fas fa-lock"></i> All transactions are secure and encrypted
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -227,11 +390,24 @@
                         </div>
                         <div class="form-group">
                             <input type="email" id="email" name="email" required>
-                            <label for="email">Email Address (Optional)</label>
+                            <label for="email">Email Address</label>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" required>
                             <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="contact-method" name="contact-method" required>
+                                <option value="">Preferred Contact Method</option>
+                                <option value="email">Email</option>
+                                <option value="phone">Phone Call</option>
+                                <option value="whatsapp">WhatsApp</option>
+                            </select>
+                            <label for="contact-method">Preferred Contact Method</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                            <label for="message">Your Message</label>
                         </div>
                         <div class="form-group">
                             <select id="subject" name="subject" required>
@@ -257,12 +433,13 @@
             
             <div class="map-container">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808477395489!2d36.82115991475399!3d-1.2923595359784992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d7b238e6c9%3A0x9d5e6b9e6a8e7e1f!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1634823456789!5m2!1sen!2ske" 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.9966!2d35.4235114!3d-0.845773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwNTAnNDQuN1MiIDM1wrAyNSczMy45N0U!5e0!3m2!1sen!2ske!4v1635432000000!5m2!1sen!2ske"
                     width="100%" 
                     height="450" 
                     style="border:0;" 
                     allowfullscreen="" 
-                    loading="lazy">
+                    loading="lazy"
+                    title="Kertai Milk Location - Exact Coordinates">
                 </iframe>
             </div>
         </div>
